@@ -277,5 +277,5 @@ async def register_user(user: UserCreate, current_user: Annotated[User, Depends(
 
 @app.get("/", response_class=HTMLResponse)
 async def get_client():
-    with open("static/index.html", "r") as file:
+    with open("../static/index.html", "r") as file:
         return file.read()
